@@ -24,14 +24,17 @@ DB_PASSWORD=...
 DB_SECRET_KEY=...
 ```
 
-
 Run the development server: 
 ```console
 $ python3 manage.py runserver
 ```
 To access the development server, go to http://127.0.0.1:8000/ in your web browser.
 
-For production deployment, follow the instructions of your preferred web hosting.
+For production deployment, add your host domain(s) to .env like so:
+```
+ALLOWED_HOSTS=['domain.com', 'other-domain.com']
+```
+You may find more info on ALLOWED_HOSTS in [Django docs](https://docs.djangoproject.com/en/3.1/ref/settings/#allowed-hosts).
 
 ### Project Goals
 
